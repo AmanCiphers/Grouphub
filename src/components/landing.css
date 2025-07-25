@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    margin-top: 20px;
+}
+
+.innerdiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+    gap: 2rem;
+}
+
+.support{
+    width: 40em;
+}
+
+#logo{
+    padding-right: 60px;
+}
+
+
