@@ -9,14 +9,9 @@
 
 body{
   background-color: #323232;
-  color:white;
   font-family: inter;
 }
 
-a{
-  color: white;
-  text-decoration: none;
-}
 
 li{
   list-style: none;

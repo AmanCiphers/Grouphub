@@ -4,37 +4,105 @@ import "./landing.css";
 const LandingPage = () => {
   return (
     <>
-      <Navbar />
+      <div className="mainPage">
+        <Box1></Box1>
+        <Box2></Box2>
+      </div>
     </>
   );
 };
 
-const Navbar = () => {
-  return (
-    <div className="container">
-      <div className="innerdiv">
-    
-        <div className="logo">
-          <img src={logo} alt="GroupHUB logo" id="logo" />
+
+const Box1 = () =>{
+  return(
+    <>
+      <div className="box1">
+        <div className="img">
+          <img src={logo} alt="logo" />
         </div>
-
-        <div className="support"></div>
-
-        <nav>
-          <ul className="nav-links">
+          <div>
+            <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#tutorials">Tutorials</a></li>
             <li><a href="#projects">Find Projects</a></li>
+        </ul>
+          </div>
+      </div>
+    </>
+  );
+}
+
+const Box2 = () =>{
+  return(
+    <>
+      <div className="box box2">
+        <ul>
             <li><a href="#account">Account</a></li>
             <li><a href="#dashboard">Dashboard</a></li>
-          </ul>
-        </nav>
-
+        </ul>
       </div>
-    </div>
+    </>
   );
-};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const Navbar = () => {
+//   return (
+//     <div className="container">
+//       <div className="innerdiv">
+    
+//         <div className="logo">
+//           <img src={logo} alt="GroupHUB logo" id="logo" />
+//         </div>
+
+//         <div className="support"></div>
+
+//         <nav>
+//           <ul className="nav-links">
+            // <li><a href="#home">Home</a></li>
+            // <li><a href="#about">About</a></li>
+            // <li><a href="#contact">Contact</a></li>
+            // <li><a href="#tutorials">Tutorials</a></li>
+            // <li><a href="#projects">Find Projects</a></li>
+            // <li><a href="#account">Account</a></li>
+            // <li><a href="#dashboard">Dashboard</a></li>
+//           </ul>
+//         </nav>
+
+//       </div>
+//     </div>
+//   );
+// };
 
 export default LandingPage;
