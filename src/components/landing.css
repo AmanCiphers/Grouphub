@@ -22,14 +22,16 @@ ul {
 }
 
 li{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .img {
     margin: 2em 0 0 5em;
 }
 
-
+.box1 .navlinks li .black{
+    color: black;
+}
 /* //////////////////////////////// box 1 /////////////////////////// */
 .box1 a {
     color: white;
@@ -37,7 +39,15 @@ li{
 }
 
 .box1 .navbar ul {
-    margin: 3em 6em 0 0;
+    position: relative;
+    margin: 3em 0 0 0;
+    left: 18em;
+    overflow: visible;
+    z-index: 999;
+}
+
+.nav-gap {
+  width: 8em;
 }
 
 .box1 .navbar {
@@ -56,12 +66,11 @@ li{
     /* border: 1px solid black; */
 
     position: relative;
-    top: 20em;
+    top: 18em;
     left: 6em;
 }
 
 .herotext {
-    font-family: monospace;
     text-align: left;
     line-height: 1.6;
     max-width: 800px;
@@ -131,9 +140,9 @@ li{
 
     z-index: 98;
     scale: 11;
-    position: fixed;
-    top: 50em;
-    right: 44em;
+    position: relative;
+    top: 20em;
+    right: 10em;
     overflow: hidden;
 }
 
@@ -147,8 +156,37 @@ li{
 
 /* Lest make it responsive */
 
-@media (max-width: 768px) {
+.hamburger{
+    visibility: hidden;
+}
+
+@media (max-width: 1520px) {
   .mainPage {
     
+  }
+}
+
+@media (max-width: 1590px) {
+  .hamburger {
+    visibility: visible;
+  }
+
+  .navbar{
+    
+  }
+
+  .bigimage{
+    display: none;
+  }
+
+  .navlinks{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+  }
+
+  .navlinks a{
+    color: black;
   }
 }
