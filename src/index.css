@@ -1,5 +1,5 @@
 /* @import "tailwindcss"; */
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 
 *{
@@ -9,7 +9,8 @@
 
 body{
   background-color: #323232;
-  font-family: inter;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow: hidden;
 }
 
 

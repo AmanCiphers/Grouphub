@@ -1,59 +1,154 @@
-.box1{
+.box1 {
     width: 66.66vw;
-    display: flex;
-    flex-direction: row;
 }
 
-.box2{
+.box2 {
     width: 33.33vw;
     height: 100vh;
     background-color: white;
 }
 
 
-.mainPage{
+.mainPage {
     display: flex;
     flex-direction: row;
 }
 
 
-ul{
+ul {
     display: flex;
     gap: 2em;
     z-index: -99;
 }
 
-.img{
-    margin : 1em 0 0 5em;
+li{
+    font-size: 1.5em;
 }
 
+.img {
+    margin: 2em 0 0 5em;
+}
+
+
 /* //////////////////////////////// box 1 /////////////////////////// */
-.box1 a{
+.box1 a {
     color: white;
     text-decoration: none;
 }
 
-.box1 ul{
-    margin: 2em 6em 0 0;
+.box1 .navbar ul {
+    margin: 3em 6em 0 0;
 }
 
-.box1{
+.box1 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.textcontainer {
+    width: 30vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
 
+    position: relative;
+    top: 20em;
+    left: 6em;
+}
 
+.herotext {
+    font-family: monospace;
+    text-align: left;
+    line-height: 1.6;
+    max-width: 800px;
+    z-index: 99 ;
+}
+
+.herotext h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.herotext h2 {
+    font-size: 1.5rem;
+    white-space: pre;
+}
+
+.herotext h3 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.herotext {
+    color: white;
+}
 
 /* //////////////////////////////// box 2 /////////////////////////// */
 
 
-.box2 > ul > li >a{
+.box2>ul>li>a {
     color: black;
     text-decoration: none;
 }
 
-.box2 > ul{
-    margin: 2em 0 0 6em
+.box2>ul {
+    margin: 3em 0 0 6em
+}
+
+
+.box2 .img {
+    /* width: 100%; */
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box2 .img img {
+    scale: 0.7;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    position: relative;
+    top: 12rem;
+    right: 1rem;
+    z-index: 99;
+}
+
+
+.bigimage img{
+    /* width: 100%; */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    /* border: 1px solid black; */
+
+    z-index: 98;
+    scale: 11;
+    position: fixed;
+    top: 50em;
+    right: 44em;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* Lest make it responsive */
+
+@media (max-width: 768px) {
+  .mainPage {
+    
+  }
 }
