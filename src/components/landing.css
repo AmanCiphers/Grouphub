@@ -1,47 +1,54 @@
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
+.mainPage {
+    background: linear-gradient(to right, #323232 75vw, white 25vw);
+    height: 100vh;
+}
+
 .nav-gap {
-  position: absolute;
-  left: 66.66vw; /* exact split point */
-  width: 0; 
-  height: 100%;
+    position: absolute;
+    left: 66.66vw;
+    /* exact split point */
+    width: 0;
+    height: 100%;
 }
 
 
 
-*{
+* {
     /* border: 1px solid grey; */
 }
 
-.navlinks-container {
-  position: relative;
-  width: 100%;
+.nav-container {
+    position: relative;
+    width: 100%;
 }
 
-.nav-left, .nav-right {
-  display: flex;
-  gap: 1em;
-  list-style: none;
-  margin: 1.5em 0 0 0;
-  padding: 0;
-  position: absolute;
-  top: 1.5em;
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+    position: absolute;
+    top: 1.5em;
 }
 
 .nav-left {
-  right: 33.33vw; 
-  margin-right: 4em;
+    right: 25vw;
+    margin-right: 4em;
 }
 
 .nav-right {
-  left: 66.66vw; 
-  margin-left: 4em;
+    left: 75vw;
+    margin-left: 4em;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 100vw;
     justify-content: space-between;
@@ -50,30 +57,145 @@ a{
 }
 
 
-.navbar .img{
+.navbar .img {
     margin: 0 0 0 6em;
 }
-.black{
+
+.black {
     color: black;
     z-index: 99;
 }
 
-.mainPage{
-    background: linear-gradient(to right, #323232 66.66vw, white 33.33vw);
-    height: 100vh;
+.box2-container {
+    width: 33.33vw;
 }
 
-.box2-container{
-   width: 33.33vw;
-}
-
-.nav-container{
+.nav-container {
     padding-top: 2em;
 }
-.box1{
+
+.box1 {
     width: 66.66vw;
 }
 
-.box2{
+.box2 {
     width: 33.33vw;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////// Responsive Design //////////////////////// */
+
+
+@media (max-width: 1200px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 2em;
+        z-index: 1000;
+        cursor: pointer;
+        color: white;
+    }
+
+    .X{
+        color: black;
+    }
+
+    .mainPage {
+        background: #323232;
+        height: 100vh;
+    }
+
+    .navlinks-container {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 60vw;
+        z-index: 999;
+        text-align: left;
+    }
+
+    .navlinks-container ul {
+        text-align: left;
+    }
+
+    .navlinks-container.open {
+        display: flex;
+        color: black;
+    }
+
+    .nav-left {
+        margin-top: 100px;
+    }
+
+    .nav-left,
+    .nav-right {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        display: block;
+        padding: 0.2em 0;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .navbar .img {
+        margin: 0 0 0 1em;
+        scale: 0.8;
+    }
+
+    .nav-container {
+        padding-top: 1em;
+    }
 }

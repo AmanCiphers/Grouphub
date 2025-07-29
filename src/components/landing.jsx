@@ -26,13 +26,24 @@ const LandingPage = () => {
 
 
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(prev => !prev)
+  }
+
   return (
     <>
       <div className="navbar">
         <div className="img">
           <img src={logo} alt="logo" />
         </div>
-        <div >
+
+        <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          {isOpen ? <X className="X"/> : <Menu />}
+        </div>
+
+        <div className={`navlinks-container ${isOpen ? 'open' : ''}`}>
           <ul className="nav-left">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
