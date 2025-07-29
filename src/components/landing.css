@@ -1,192 +1,79 @@
-.box1 {
-    width: 66.66vw;
-}
-
-.box2 {
-    width: 33.33vw;
-    height: 100vh;
-    background-color: white;
-}
-
-
-.mainPage {
-    display: flex;
-    flex-direction: row;
-}
-
-
-ul {
-    display: flex;
-    gap: 2em;
-    z-index: -99;
-}
-
-li{
-    font-size: 1.2em;
-}
-
-.img {
-    margin: 2em 0 0 5em;
-}
-
-.box1 .navlinks li .black{
-    color: black;
-}
-/* //////////////////////////////// box 1 /////////////////////////// */
-.box1 a {
-    color: white;
+a{
     text-decoration: none;
-}
-
-.box1 .navbar ul {
-    position: relative;
-    margin: 3em 0 0 0;
-    left: 18em;
-    overflow: visible;
-    z-index: 999;
+    color: white;
 }
 
 .nav-gap {
-  width: 8em;
+  position: absolute;
+  left: 66.66vw; /* exact split point */
+  width: 0; 
+  height: 100%;
 }
 
-.box1 .navbar {
+
+
+*{
+    /* border: 1px solid grey; */
+}
+
+.navlinks-container {
+  position: relative;
+  width: 100%;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  position: absolute;
+  top: 1.5em;
+}
+
+.nav-left {
+  right: 33.33vw; 
+  margin-right: 4em;
+}
+
+.nav-right {
+  left: 66.66vw; 
+  margin-left: 4em;
+}
+
+.navbar{
     display: flex;
-    flex-direction: row;
+    width: 100vw;
     justify-content: space-between;
+    justify-self: center;
+    z-index: 999;
 }
 
-.textcontainer {
-    width: 30vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
 
-    position: relative;
-    top: 18em;
-    left: 6em;
+.navbar .img{
+    margin: 0 0 0 6em;
 }
-
-.herotext {
-    text-align: left;
-    line-height: 1.6;
-    max-width: 800px;
-    z-index: 99 ;
-}
-
-.herotext h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.herotext h2 {
-    font-size: 1.5rem;
-    white-space: pre;
-}
-
-.herotext h3 {
-    font-size: 1.1rem;
-    margin-top: 1rem;
-}
-
-.herotext {
-    color: white;
-}
-
-/* //////////////////////////////// box 2 /////////////////////////// */
-
-
-.box2>ul>li>a {
+.black{
     color: black;
-    text-decoration: none;
-}
-
-.box2>ul {
-    margin: 3em 0 0 6em
-}
-
-
-.box2 .img {
-    /* width: 100%; */
-    padding: 1em;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.box2 .img img {
-    scale: 0.7;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-
-    position: relative;
-    top: 12rem;
-    right: 1rem;
     z-index: 99;
 }
 
-
-.bigimage img{
-    /* width: 100%; */
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-
-    /* border: 1px solid black; */
-
-    z-index: 98;
-    scale: 11;
-    position: relative;
-    top: 20em;
-    right: 10em;
-    overflow: hidden;
+.mainPage{
+    background: linear-gradient(to right, #323232 66.66vw, white 33.33vw);
+    height: 100vh;
 }
 
-
-
-
-
-
-
-
-
-/* Lest make it responsive */
-
-.hamburger{
-    visibility: hidden;
+.box2-container{
+   width: 33.33vw;
 }
 
-@media (max-width: 1520px) {
-  .mainPage {
-    
-  }
+.nav-container{
+    padding-top: 2em;
+}
+.box1{
+    width: 66.66vw;
 }
 
-@media (max-width: 1590px) {
-  .hamburger {
-    visibility: visible;
-  }
-
-  .navbar{
-    
-  }
-
-  .bigimage{
-    display: none;
-  }
-
-  .navlinks{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-  }
-
-  .navlinks a{
-    color: black;
-  }
+.box2{
+    width: 33.33vw;
 }
