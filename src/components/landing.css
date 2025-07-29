@@ -53,7 +53,6 @@ a {
     width: 100vw;
     justify-content: space-between;
     justify-self: center;
-    z-index: 999;
 }
 
 
@@ -63,11 +62,16 @@ a {
 
 .black {
     color: black;
-    z-index: 99;
 }
 
+.box1-container{
+    width: 75vw;
+} 
+
 .box2-container {
-    width: 33.33vw;
+    width: 25vw;
+    left: 75vw;
+    position: relative;
 }
 
 .nav-container {
@@ -75,11 +79,12 @@ a {
 }
 
 .box1 {
-    width: 66.66vw;
+    width: 75vw;
 }
 
 .box2 {
-    width: 33.33vw;
+    width: 25vw;
+    
 }
 
 
@@ -87,6 +92,62 @@ a {
     display: none;
 }
 
+
+
+.box1 {
+    padding: 1em;
+    color: white;
+    position: relative;
+    top: 15em;
+    left: 7em;
+}
+
+.herotext {
+    text-align: left;
+}
+
+.herotext h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.herotext h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.herotext p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-top: 2em;
+}
+
+.mono {
+    white-space: pre;
+}
+
+.herotext h2:first-of-type {
+    margin-bottom: 0.5em;
+}
+
+
+.box2 .img {
+  width: 100%;
+  position: relative;
+  bottom: 70px;
+  z-index: 99;
+}
+
+.box2 .img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  scale: 0.7;
+}
 
 
 
@@ -122,6 +183,7 @@ a {
 
 
 @media (max-width: 1200px) {
+
     .hamburger {
         display: block;
         position: absolute;
@@ -132,13 +194,12 @@ a {
         color: white;
     }
 
-    .X{
+    .X {
         color: black;
     }
 
     .mainPage {
         background: #323232;
-        height: 100vh;
     }
 
     .navlinks-container {
@@ -197,5 +258,62 @@ a {
 
     .nav-container {
         padding-top: 1em;
+    }
+
+
+
+
+
+    /* //////////// Box1 ////////////// */
+
+
+    .box1{
+        width: 100vw;
+        display: flex;
+        justify-self: center;
+        top: 10em;
+        left: 0; 
+    }
+
+    .herotext {
+        text-align: center;
+    }
+
+    .herotext h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+
+    .herotext h2 {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .herotext p {
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.5;
+        max-width: 600px;
+        margin-top: 2em;
+    }
+
+    .mono {
+        white-space: pre;
+    }
+
+    .herotext h2:first-of-type {
+        margin-bottom: 0.5em;
+    }
+
+}
+
+
+@media (max-width: 1430px){
+    
+    .box2 .img img {
+      scale: 0.8;
+      position: relative;
+      top: 50px;
     }
 }
