@@ -7,7 +7,8 @@ import { Menu, X } from 'lucide-react'
 const LandingPage = () => {
   return (
     <>
-      <div className="mainPage">
+      <div className="container">
+        <div className="mainPage">
         <div className="nav-container">
           <Navbar></Navbar>
         </div>
@@ -25,6 +26,7 @@ const LandingPage = () => {
         <div className="box2-container">
           <Box2></Box2>
         </div>
+      </div>
       </div>
     </>
   );

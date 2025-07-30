@@ -9,6 +9,7 @@ a {
     overflow: hidden;
 }
 
+
 .nav-gap {
     position: absolute;
     left: 66.66vw;
@@ -181,26 +182,31 @@ button{
 }
 
 
+.bigimage{
+    overflow-y: hidden;
+    
+}
 
 .bigimage .heroimage {
     z-index: 99;
-    aspect-ratio: calc(1/1);
+    aspect-ratio: calc(1/2);
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     width: 50vw;
     height: 100vh;
-    top: 35vh;
+    top: 0vh;
     right: 11vw;
     overflow: hidden;
     margin-left: 40em;
-
+    /* border: 1px solid black; */
 }
 
 .bigimage .heroimage img {
     scale: 1;
     position: relative;
+    top: 20em;
     left: 6em;
     width: 100%;
     height: auto;
