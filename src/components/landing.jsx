@@ -31,6 +31,16 @@ const LandingPage = () => {
 };
 
 
+const MyButton = ({name})=>{
+  return(
+    <>
+      <div className="btn">
+        <button>{name}</button>
+      </div>
+    </>
+  );
+}
+
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -84,6 +94,10 @@ const Box1 = () => {
             <h3>
               An AI-driven platform designed to help you create or join meaningful projects, collaborate with purpose, and grow — no prior experience required.
             </h3>
+          </div>
+
+          <div className="herobutton">
+            <MyButton name='Get Started'></MyButton>
           </div>
         </div>
 
