@@ -16,6 +16,12 @@ const LandingPage = () => {
           <Box1></Box1>
         </div>
 
+        <div className="bigimage">
+          <div className="heroimage">
+            <img src={logo} alt="big logo" />
+          </div>
+        </div>
+
         <div className="box2-container">
           <Box2></Box2>
         </div>
@@ -88,12 +94,6 @@ const Box2 = () => {
     <div className="box box2">
       <div className="img">
         <img src={heroimage} alt="heroimage" />
-      </div>
-
-      <div className="bigimage">
-        <div className="heroimage">
-        <img src={logo} alt="big logo" />
-      </div>
       </div>
     </div>
   );
