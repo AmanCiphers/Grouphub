@@ -78,10 +78,13 @@ const Box1 = () => {
       <div className="box1">
         <div className="textcontainer">
           <div className="herotext">
-            <h1>Build Together, Smarter</h1>
-            <h2 className="mono">Find Projects   | Join Teams</h2>
-            <h2 className="mono">Create Projects | Make Teams</h2>
-            <p>An AI-powered platform to join or create group projects, collaborate, and grow no experience needed.</p>
+            <h1>Collaborate Intelligently. Build Seamlessly.</h1>
+            <h2 className="mono">Discover Projects <span>|</span> Join Talented Teams</h2>
+            <h2 className="mono">Initiate Ideas <span>|</span> Lead with Innovation</h2>
+            <p>
+              An AI-driven platform designed to help you create or join meaningful projects,
+              collaborate with purpose, and grow — no prior experience required.
+            </p>
           </div>
         </div>
       </div>

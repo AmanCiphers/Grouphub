@@ -104,6 +104,7 @@ a {
 
 .herotext {
     text-align: left;
+    max-width: 50em;
 }
 
 .herotext h1 {
@@ -137,7 +138,7 @@ a {
 .box2 .img {
   width: 100%;
   position: relative;
-  bottom: 70px;
+  bottom: 100px;
   z-index: 99;
 }
 
@@ -161,14 +162,14 @@ a {
     width: 50vw;
     height: 100vh;
     top: 35vh;
-    right: 12vw;
+    right: 11vw;
     overflow: hidden;
     margin-left: 40em;
     
 }
 
 .bigimage .heroimage img{
-    scale: 1.2;
+    scale: 1;
     position: relative;
     left: 6em;
     width: 100%;
