@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import LandingPage from './components/landing.jsx'
+import LandingPage from './components/landing/landing.jsx'
+import Landing2 from './components/landing-2/landing-2.jsx'
+import SeparatorZigzag from './components/separators.jsx'
 import './App.css'
 
 function App() {
@@ -8,8 +10,12 @@ function App() {
   return (
     <>
       <LandingPage></LandingPage>
+      <SeparatorZigzag></SeparatorZigzag>
+      <Landing2></Landing2>
     </>
   )
 }
+
+
 
 export default App

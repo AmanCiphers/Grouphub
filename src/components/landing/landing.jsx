@@ -1,5 +1,5 @@
-import logo from "../assets/Logo.svg";
-import heroimage from "../assets/group-1-photo.png";
+import logo from "../../assets/logo.svg";
+import heroimage from "../../assets/group-1-photo.png";
 import "./landing.css";
 import React, { useState } from "react";
 import { Menu, X } from 'lucide-react'

@@ -6,6 +6,7 @@ a {
 .mainPage {
     background: linear-gradient(to right, #323232 75vw, white 25vw);
     height: 100vh;
+    overflow: hidden;
 }
 
 .nav-gap {
