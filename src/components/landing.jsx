@@ -81,12 +81,13 @@ const Box1 = () => {
             <h1>Collaborate Intelligently. Build Seamlessly.</h1>
             <h2 className="mono">Discover Projects <span>|</span> Join Talented Teams</h2>
             <h2 className="mono">Initiate Ideas <span>|</span> Lead with Innovation</h2>
-            <p>
-              An AI-driven platform designed to help you create or join meaningful projects,
-              collaborate with purpose, and grow — no prior experience required.
-            </p>
+            <h3>
+              An AI-driven platform designed to help you create or join meaningful projects, collaborate with purpose, and grow — no prior experience required.
+            </h3>
           </div>
         </div>
+
+        <div className="mobile-screen-content"></div>
       </div>
     </>
   );
