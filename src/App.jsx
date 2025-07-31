@@ -8,10 +8,11 @@ function App() {
   
   return (
     <>
-      <LandingPage className=></LandingPage>
+      <LandingPage></LandingPage>
       <Landing2></Landing2>
     </>
   )
+  
 }
 
 

@@ -96,10 +96,9 @@ const Box1 = () => {
             <h3>
               An AI-driven platform designed to help you create or join meaningful projects, collaborate with purpose, and grow — no prior experience required.
             </h3>
-          </div>
-
-          <div className="herobutton">
+            <div className="herobutton">
             <MyButton name='Get Started'></MyButton>
+          </div>
           </div>
         </div>
 
